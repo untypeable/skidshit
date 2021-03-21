@@ -85,6 +85,7 @@ def sendRestoreRequest(network_devices):
     for i in range(2):
         for device in network_devices:
             sendCustomARPRequest(device[0], device[1], gateway_mac, gateway_ip)
+    return
 
 showOptionsMenu()
 
